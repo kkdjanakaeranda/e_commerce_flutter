@@ -1,3 +1,4 @@
+import 'package:newecommerce/core/services/navigation_service.dart';
 import 'package:newecommerce/core/theme/app_theme.dart';
 import 'package:newecommerce/routes/app_router.dart';
 import 'package:newecommerce/routes/app_routes.dart';
@@ -11,12 +12,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: AppStrings.appName,
       theme: AppTheme.light,
-      initialRoute: AppRoutes.initial,
+      initialRoute: AppRoutes.main,
       onGenerateRoute: AppRouter.generateRoute,
     );
   }
